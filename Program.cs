@@ -208,26 +208,81 @@
 // SNACK 10
 
 
-Console.WriteLine("inserisci un numero");
-int N = Convert.ToInt32(Console.ReadLine());
-    Dictionary<string, int> bho = new Dictionary<string, int>();
+//Console.WriteLine("inserisci un numero");
+//int N = Convert.ToInt32(Console.ReadLine());
+//    Dictionary<string, int> bho = new Dictionary<string, int>();
 
-for (int i = 0; i < N; i++)
+//for (int i = 0; i < N; i++)
+//{
+//    int[] array = new int[10];
+//    for (int j = 0; j < array.Length; j++)
+//    {
+//        Random r = new Random();
+//        array[j] = r.Next(1, 100);
+
+
+
+//    }
+//    Console.WriteLine("Il {0} array è composto da: ", i+1);
+//    foreach (var item in array)
+//    {
+//        Console.Write(item.ToString() + " ");
+//        Console.WriteLine();    
+//    }
+//    Console.WriteLine("-----"); 
+//}
+
+// fine snack 10
+
+// SNACK 11
+
+//string inputFirst, inputSecond;
+
+//static string longer(string first, string second)
+//{
+//    string output;
+//    if (first.Length > second.Length)
+//    {
+//        output = "La parole più lunga è " + first;
+//        return output;
+//    }else if (first.Length < second.Length)
+//    {
+//        output = "La parole più lunga è "+ second;
+//        return output;
+//    }
+//    else
+//    {
+//        output = "Le parole inserite sono " + first + " e " + second;
+//        return output;
+//    }
+//}
+
+//Console.WriteLine("Inserisci una parola");
+//inputFirst = Console.ReadLine();
+
+//Console.WriteLine("Inserisci un'altrta parola");
+//inputSecond = Console.ReadLine();
+
+//Console.Clear();    
+//Console.WriteLine(longer(inputFirst, inputSecond));
+
+// fine snack 11
+
+static string isOddEven(int num)
 {
-    int[] array = new int[10];
-    for (int j = 0; j < array.Length; j++)
+    if (num % 2 == 0)
     {
-        Random r = new Random();
-        array[j] = r.Next(1, 100);
-
-
-
+        return "pari";
     }
-    Console.WriteLine("Il {0} array è composto da: ", i+1);
-    foreach (var item in array)
+    else
     {
-        Console.Write(item.ToString() + " ");
-        Console.WriteLine();    
+        return "dispari";
     }
-    Console.WriteLine("-----"); 
 }
+
+Console.WriteLine("Inserisci il numero da verificare");
+int input = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine( "Il numero inserito {0} è {1}", input, isOddEven(input) );
+
+//FileNotFoundException snack 12
