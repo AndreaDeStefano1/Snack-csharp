@@ -105,3 +105,60 @@
 
 
 // fine snack 5
+
+
+//SNACK 6
+
+
+//string[] guests = { "mario", "paolo", "luca" };
+//Console.WriteLine("Scrivi il tuo nome per verificare se sei stato invitato");
+//string input = Console.ReadLine();
+//input = input.ToLower();
+//bool invited = false;
+
+//for (int i = 0; i < guests.Length; i++)
+//{
+//    if(guests[i] == input)
+//    {
+//        invited = true;
+//    }
+
+//}
+//if (invited)
+//{
+//    Console.WriteLine("Sei invitato!!");
+//}
+//else
+//{
+//    Console.WriteLine("Non sei invitato!!");
+
+//}
+
+
+// fine snack 6
+
+
+//SNACK 7
+
+int[] numbers = new int[6];
+int input;
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine("Inserisci un numero");
+    input = Convert.ToInt32(Console.ReadLine());
+    if(input % 2 != 0)
+    {
+        numbers[i] = input;
+    }
+}
+
+foreach (int i in numbers)
+{
+    if(i != 0)
+    {
+        Console.WriteLine(i);
+
+    }
+}
+
+// fine snack 7
