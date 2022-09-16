@@ -140,25 +140,65 @@
 
 //SNACK 7
 
-int[] numbers = new int[6];
-int input;
-for (int i = 0; i < numbers.Length; i++)
-{
-    Console.WriteLine("Inserisci un numero");
-    input = Convert.ToInt32(Console.ReadLine());
-    if(input % 2 != 0)
-    {
-        numbers[i] = input;
-    }
-}
+//int[] numbers = new int[6];
+//int input;
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    Console.WriteLine("Inserisci un numero");
+//    input = Convert.ToInt32(Console.ReadLine());
+//    if(input % 2 != 0)
+//    {
+//        numbers[i] = input;
+//    }
+//}
 
-foreach (int i in numbers)
-{
-    if(i != 0)
-    {
-        Console.WriteLine(i);
+//foreach (int i in numbers)
+//{
+//    if(i != 0)
+//    {
+//        Console.WriteLine(i);
 
-    }
-}
+//    }
+//}
 
 // fine snack 7
+
+
+// SNACK 8
+
+//int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
+//int sum = 0;
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if(i % 2 != 0)
+//    {
+//       sum += numbers[i] ;
+//        Console.WriteLine(i);
+//    }
+//}
+//Console.WriteLine(sum);
+
+// fine snack 8
+
+
+// SNACK 9
+
+
+int sum = 0;
+int[] numbers = new int[50];
+
+
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        while(sum < 50)
+        {
+            Console.Clear();
+            Console.WriteLine("Inserisci un numero");
+            numbers[i] = Convert.ToInt32(Console.ReadLine());
+            sum += numbers[i];
+        }
+    }  
+    Console.WriteLine("La somma dei numeri è uguale o superiore a 50 attualmente siamo a {0}", sum);
+
+
+//  fine snack 9
