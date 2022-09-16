@@ -184,21 +184,50 @@
 // SNACK 9
 
 
-int sum = 0;
-int[] numbers = new int[50];
+//int sum = 0;
+//int[] numbers = new int[50];
 
 
-    for (int i = 0; i < numbers.Length; i++)
-    {
-        while(sum < 50)
-        {
-            Console.Clear();
-            Console.WriteLine("Inserisci un numero");
-            numbers[i] = Convert.ToInt32(Console.ReadLine());
-            sum += numbers[i];
-        }
-    }  
-    Console.WriteLine("La somma dei numeri è uguale o superiore a 50 attualmente siamo a {0}", sum);
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    while(sum < 50)
+//    {
+//        Console.Clear();
+//        Console.WriteLine("Inserisci un numero");
+//        numbers[i] = Convert.ToInt32(Console.ReadLine());
+//        sum += numbers[i];
+//    }
+//}
+//Console.Clear();
+//Console.WriteLine("La somma dei numeri è uguale o superiore a 50 attualmente siamo a {0}", sum);
 
 
 //  fine snack 9
+
+
+// SNACK 10
+
+
+Console.WriteLine("inserisci un numero");
+int N = Convert.ToInt32(Console.ReadLine());
+    Dictionary<string, int> bho = new Dictionary<string, int>();
+
+for (int i = 0; i < N; i++)
+{
+    int[] array = new int[10];
+    for (int j = 0; j < array.Length; j++)
+    {
+        Random r = new Random();
+        array[j] = r.Next(1, 100);
+
+
+
+    }
+    Console.WriteLine("Il {0} array è composto da: ", i+1);
+    foreach (var item in array)
+    {
+        Console.Write(item.ToString() + " ");
+        Console.WriteLine();    
+    }
+    Console.WriteLine("-----"); 
+}
